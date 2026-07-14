@@ -1,0 +1,22 @@
+name: Self Hosted Demo
+
+on:
+  push:
+
+jobs:
+  demo:
+    runs-on: self-hosted
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Machine info
+        run: |
+          echo "Hello from self-hosted runner!"
+          hostname
+          whoami
+          pwd
+          ls -la
+
+      - name: Docker version
+        run: docker --version
