@@ -1,7 +1,6 @@
-name: Self Hosted Demo
+name: Demo
 
-on:
-  push:
+on: [push]
 
 jobs:
   demo:
@@ -10,13 +9,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Machine info
+      - name: Hello
         run: |
-          echo "Hello from self-hosted runner!"
+          echo "Hello from Kubernetes!"
           hostname
-          whoami
           pwd
-          ls -la
-
-      - name: Docker version
-        run: docker --version
