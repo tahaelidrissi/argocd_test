@@ -423,16 +423,6 @@ This architecture improves scalability, isolation, and resource utilization whil
 
 ---
 
-# Future Improvements
-
-- Replace RunnerDeployment with the new GitHub Runner Scale Sets.
-- Use a custom Runner Docker image with pre-installed tools.
-- Deploy ARC on a multi-node Kubernetes cluster.
-- Integrate with ArgoCD for GitOps deployments.
-- Enable Cluster Autoscaler for automatic node provisioning.
-
----
-
 # Technologies
 
 - GitHub Actions
